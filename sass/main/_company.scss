@@ -1,0 +1,11 @@
+.company {
+  background-color: $background;
+  &-wrapper {
+    margin-top: 37px;
+    padding-bottom: 111px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

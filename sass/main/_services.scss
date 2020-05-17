@@ -1,0 +1,60 @@
+.main {
+    .title {
+        margin: 0;
+        padding: 0;
+        padding-top: 62px;
+
+        @include text($titlegray, 36px, 300, $RobotoLight, 38px);
+        text-align: center;
+    }
+    .wrap_last {
+        padding-bottom: 72px;
+    }
+    .center {
+        margin-top: 22px;
+
+        text-align: center;
+    }
+    .wrapper {
+        margin-top: 36px;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .wrap {
+        display: flex;
+        align-items: center;
+        &__subtitle {
+            @include text($textblue, 28px, 300, $RobotoLight, 24px);
+        }
+        &__paragraph {
+            margin-top: 13px;
+
+            @include text($textgray, 17px, 100, $RobotoRegular, 24px);
+        }
+    }
+    .ml {
+        margin-left: 30px;
+    }
+    .lbl {
+        margin-top: 35px;
+    }
+    .label-btn {
+        padding: 20px 52px 17px 49px;
+
+        @include text($textwhite, 16px, 500, $RobotoRegular, 19.48px);
+        text-align: center;
+        background-color: $buttoncolor;
+        border: 1px solid $buttoncolor;
+        border-radius: 30px;
+        outline: none;
+        transition-duration: 0.5s;
+        &:hover {
+            color: $buttoncolor;
+            background-color: transparent;
+        }
+    }
+    .wrap_down {
+        margin-top: 20px;
+    }
+}

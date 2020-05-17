@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Degree</title>
+        <link rel="stylesheet" href="dest/reset.css">
+        <link rel="stylesheet" href="src/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="logo">
+                        <a href="#" class="link"><img src="assets/images/header/logo.png" alt="" class="logo__img"></a>
+                        <a href="#" class="logo__text">Degree</a>
+                    </div>
+                    <div class="wrapper-line">
+                        <div class="wrapper-line">
+                            <a href="tel:88002590936"><img src="assets/images/header/icon-phone.png" alt="" class="icon-phone"></a>
+                            <div class="wrapper-column">
+                                <div class="wrapper-column__title">Есть вопросы? Звоните!</div>
+                                <a href="tel:88002590936" class="wrapper-column__link">8 /800/ 259 09 36</a>
+                            </div>
+                        </div>
+                        <div class="wrapper-column wrapper-column_second">
+                            <button class="wrapper-column__button"><img src="assets/images/header/icon-menu.png" alt=""></button>
+                            <button class="wrapper-column__text">меню</button>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="title">
+                    Услуги по 3D моделированию,<br>
+                    <span class="title-small">полный спектр услуг</span>
+                </h1>
+                <!-- <h3 class="subtitle">Оставьте заявку сейчас и получите дизайн интерьера бесплатно!</h3> -->
+                <p class="center"><label for="input-first" class="subtitle subtitle-big">Оставьте заявку сейчас и получите дизайн интерьера бесплатно!</label></p>
+                <form action="" class="form">
+                    <div class="wrapper"> 
+                        <input id="input-first" class="form__input" type="text" placeholder="Ваше имя">
+                        <input class="form__input" type="email" placeholder="E-mail">
+                        <input class="form__input" type="tel" placeholder="Номер телефона">
+                    </div>
+                    <div>
+                        <input type="submit" class="form__submit" value="Оставить заявку!">
+                    </div>
+                </form>
+                <h3 class="subtitle subtitle-small">*Мы гарантируем конфидициальность передаваемых данных</h3>
+                <p class="center-slider"><a href="#main"><img src="assets/images/header/slider.png" alt="" class="slider"></a></p>
+            </div>
+            <!-- /.container -->
+        </header>
+        <!-- /.header -->
+        <main class="main">
+            <a id='main'></a>
+            <section class="services">
+                <div class="container">
+                    <h3 class="title">Наши услуги</h3>
+                    <p class="center"><img src="assets/images/main/section-services/line1.png" alt="" class="img-line"></p>
+                    <div class="wrapper">
+                        <div class="wrap">
+                            <div class="wrap-small">
+                                <h4 class="wrap__subtitle">Дизайн интерьера</h4>
+                                <p class="wrap__paragraph">
+                                    Услуга, направленная на разработку интерьеров помещений<br>
+                                    с целью обеспечить удобство и эстетически приятное ощущение у<br>
+                                    человека при нахождении в помещении
+                                </p>
+                                <p class="lbl"></a><label for="input-first" class="label-btn">Оставить заявку</label></p>
+                            </div>
+                            <div class="wrap-small wrap-small_img ml">
+                                <img src="assets/images/main/section-services/photo1.png" alt="" class="wrap-small__img">
+                            </div>
+                        </div>
+                        <div class="wrap wrap_down">
+                            <div class="wrap-small wrap-small_img">
+                                <img src="assets/images/main/section-services/photo2.png" alt="" class="wrap-small__img">
+                            </div>
+                            <div class="wrap-small ml">
+                                <h4 class="wrap__subtitle">Дизайн экстерьера</h4>
+                                <p class="wrap__paragraph">
+                                    Услуга, направленная на разработку дизайна прилегающих<br>
+                                    элементов зданий, а также дизайн самих зданий, позволяющая<br>
+                                    обеспечить удобство людей при нахождении на территории
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap wrap_down wrap_last">
+                            <div class="wrap-small">
+                                <h4 class="wrap__subtitle">Визуализация</h4>
+                                <p class="wrap__paragraph">
+                                    Услуга, направленная на разработку дизайна прилегающих<br>
+                                    элементов зданий, а также дизайн самих зданий, позволяющая<br>
+                                    обеспечить удобство людей при нахождении на территории
+                                </p>
+                            </div>
+                            <div class="wrap-small wrap-small_img ml">
+                                <img src="assets/images/main/section-services/photo3.png" alt="" class="wrap-small__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.services -->
+            <section class="price">
+                <div class="container">
+                    <h3 class="title">Рассчитать стоимость</h3>
+                    <p class="center"><img src="assets/images/main/section-services/section-price/line.png" alt=""></p>
+                    <p class="center"><label for="" class="subtitle">Рассчитайте предварительную стоимость разработки интерьера</label></p>
+                    <div class="wrapper-price">
+                        <div class="wrap">
+                            <div class="wrap-small">
+                                <h4 class="wrap__title">Площадь помещения:</h4>
+                                <div class="slidecontainer">
+                                    <p class="slidecontainer__value">Value: <span id="demo">250000</span></p>
+                                    <input type="range" min="1" max="500000" value="250000" class="slider" id="myRange">
+                                </div>
+                            </div>
+                            <div class="wrap-small wrap-small_second">
+                                <h4 class="wrap__title">Выберите пакет:</h4>
+                                <div class="wrapper-button">
+                                    <input id="light" type="radio" name="package" class="hidden">
+                                    <label for="light" class="wrapper-button-label wrapper-button__light">Light</label>
+                                    <div class="hidden-description hidden-description-first">
+                                        Облегчённый план расстановки мебели. Рабочие<br>
+                                        чертежи (план полов, план потолка)
+                                    </div>
+
+                                    <input id="medium" type="radio" name="package" class="hidden">
+                                    <label for="medium" class="wrapper-button-label wrapper-button__medium">Medium</label>
+                                    <div class="hidden-description hidden-description-second">
+                                        План расстановки мебели, 3D визуализация. Рабочие<br>
+                                        чертежи (план полов, план потолка)
+                                    </div>
+
+                                    <input id="full" type="radio" name="package" class="hidden">
+                                    <label for="full" class="wrapper-button-label wrapper-button__full">Full</label>
+                                    <div class="hidden-description hidden-description-third">
+                                        Полный план расстановки мебели, 3D визуализация. Все рабочие<br>
+                                        чертежи (план полов, план потолка, развертки по стенам, план электросетей)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap-second">
+                            <form class="wrap-second__form">
+                                <div class="wrap-second_wrap wrap-second_wrap-first">
+                                    <div class="wrap-second__title">Площадь помещения:</div>
+                                    <input id="building" type="text" class="wrap-second__input" value="250000">
+                                </div>
+
+                                <div class="wrap-second_wrap wrap-second_wrap-second">
+                                    <div class="wrap-second__title">Средняя стоимость м2:</div>
+                                    <input id="price" type="text" class="wrap-second__input" value="1000" readonly='readonly'>
+                                </div>
+
+                                <div class="wrap-second_wrap wrap-second_wrap-third">
+                                    <div class="wrap-second__title">Средняя стоимость объекта:</div>
+                                    <input id="total" type="text" class="wrap-second__input" value="250000000" readonly='readonly'>
+                                </div>
+                                <input type="submit" class="wrap-second__submit" value="Получить консультацию специалиста">
+                            </form>
+                            <div class="wrap-second__call">или позвоните нам по телефону:</div>
+                            <p class="wrap-second__center"><a href="tel:+77273887177" class="wrap-second__link">+ 7 727 388 71 77</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.price -->         
+            <section class="profile">
+                <div class="container">
+                    <h3 class="title">Портфолио</h3>
+                    <p class="center"><img src="assets/images/main/section-services/line1.png" alt="" class="img-line"></p>
+                    <div class="profile-center"><div id="profile-wrap" class="wrap">
+                        <input type="radio" id="all" class="profile__input">
+                        <label for="all" id="all-label" class="profile__label">все проекты</label>
+
+                        <input type="radio" id="extr" class="profile__input">
+                        <label for="extr" id="extr-label" class="profile__label active-extr">экстерьеры</label>
+
+                        <input type="radio" id="intr" class="profile__input">
+                        <label for="intr" id="intr-label" class="profile__label">жилые интерьеры</label>
+
+                        <input type="radio" id="public" class="profile__input">
+                        <label for="public" id="public-label" class="profile__label">общественные интерьеры</label>
+                    </div></div>
+                    <figure id="exterior" class="profile-figure profile-figure-exterior active">
+                        <div class="figure-wrapper">
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/image1.png" class="figure__img" alt=""></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/image2.png" class="figure__img" alt=""></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/image3.png" class="figure__img" alt=""></div>
+                        </div>
+                        <div class="figure-wrapper">
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/image4.png" class="figure__img" alt=""></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/image5.png" class="figure__img" alt=""></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/image6.png" class="figure__img" alt=""></div>
+                        </div>
+                    </figure>
+                    <figure id="interior" class="profile-figure profile-figure-interior">
+                        <div class="figure-wrapper">
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/interior/image1.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/interior/image2.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/interior/image3.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                        </div>
+                        <div class="figure-wrapper">
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/interior/image4.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/interior/image5.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/interior/image6.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                        </div>
+                    </figure>
+                    <figure id="public-figure" class="profile-figure profile-figure-public">
+                        <div class="figure-wrapper">
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/publicintr/image1.jpeg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/publicintr/image2.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/publicintr/image3.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                        </div>
+                        <div class="figure-wrapper">
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/publicintr/image4.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/publicintr/image5.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/publicintr/image6.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                        </div>
+                    </figure>
+                    <figure id="all-figure" class="profile-figure profile-figure-all">
+                        <div class="figure-wrapper">
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/image1.png" class="figure__img" alt=""></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/image2.png" class="figure__img" alt=""></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/image3.png" class="figure__img" alt=""></div>
+                        </div>
+                        <div class="figure-wrapper">
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/image4.png" class="figure__img" alt=""></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/image5.png" class="figure__img" alt=""></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/image6.png" class="figure__img" alt=""></div>
+                        </div>
+                        <div class="figure-wrapper">
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/interior/image1.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/interior/image2.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/interior/image3.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                        </div>
+                        <div class="figure-wrapper">
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/interior/image4.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/interior/image5.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/interior/image6.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                        </div>
+                        <div class="figure-wrapper">
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/publicintr/image1.jpeg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/publicintr/image2.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/publicintr/image3.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                        </div>
+                        <div class="figure-wrapper">
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/publicintr/image4.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/publicintr/image5.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                            <div class="img-wrapper"><img src="assets/images/main/section-services/section-profile/publicintr/image6.jpg" class="figure__img" alt="" width="360" height="260"></div>
+                        </div>
+                    </figure>
+                    </div>
+            </section>
+            <section class="advertising">
+                <div class="container">
+                    <h3 class="title">Почему мы лучшие?</h3>
+                    <p class="center"><img src="assets/images/main/section-services/line1.png" alt="" class="img-line"></p>
+                    <div class="advertising-wrapper">
+                        <div class="advertising-wrap">
+                            <img src="assets/images/main/section-services/section-advertising/icon1.png" alt="">
+                            <div class="advertising__description">
+                                Профессиональные дизайнеры<br>
+                                и визуализаторы с зарубежной<br>
+                                практикой работы
+                            </div>
+                        </div>
+                        <div class="advertising-wrap">
+                            <img src="assets/images/main/section-services/section-advertising/icon2.png" alt="">
+                            <div class="advertising__description">
+                                Интеративный подход, работаем<br>
+                                до полного согласования<br>
+                                с Вами
+                            </div>
+                        </div>
+                        <div class="advertising-wrap">
+                            <img src="assets/images/main/section-services/section-advertising/icon3.png" alt="">
+                            <div class="advertising__description">
+                                Решаем вопрос закупки, берем<br>
+                                авторский надзор на себя<br>
+                                (пакет Full)
+                            </div>
+                        </div>
+                        <div class="advertising-wrap">
+                            <img src="assets/images/main/section-services/section-advertising/icon4.png" alt="">
+                            <div class="advertising__description">
+                                Над проектом работает группа<br>
+                                специалистов под началом project<br>
+                                менеджера в ERP системе
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advertising-wrapper-second">
+                        <div class="advertising-wrap advertising-wrap-first">
+                            <img src="assets/images/main/section-services/section-advertising/icon5.png" alt="">
+                            <div class="advertising__description">
+                                Выполнение раньше установленных<br>
+                                сроков
+                            </div>
+                        </div>
+                        <div class="advertising-wrap">
+                            <img src="assets/images/main/section-services/section-advertising/icon6.png" alt="">
+                            <div class="advertising__description advertising-wrap-second">
+                                Дарим альбом проекта, вместе с 25%<br>
+                                скидкой на следующее обращение
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.advertising -->
+            <section class="interaction">
+                <div class="container">
+                    <h3 class="title">Процесс взаимодействия</h3>
+                    <p class="center"><img src="assets/images/main/section-services/line1.png" alt="" class="img-line"></p>
+                    <div class="interaction-wrapper">
+                        <div class="interaction-wrap">
+                            <div><img class="interaction__img" src="assets/images/main/section-services/section-interaction/photo1.png" alt=""></div>
+                            <p class="interaction-center"><div class="interaction__description">Заполнение брифа</div></p>
+                        </div>
+                        <div class="interaction-wrap">
+                            <p class="interaction-center"><div class="interaction__description">Исследование</div></p>
+                            <img class="interaction__img" src="assets/images/main/section-services/section-interaction/photo2.png" alt=""></div>
+                        </div>
+                        <div class="interaction-wrap">
+                            <div><img class="interaction__img" src="assets/images/main/section-services/section-interaction/photo3.png" alt=""></div>
+                            <p class="interaction-center"><div class="interaction__description">Идея</div></p>
+                        </div>
+                        <div class="interaction-wrap">
+                            <p class="interaction-center"><div class="interaction__description">Завершение</div></p>
+                            <div><img class="interaction__img" src="assets/images/main/section-services/section-interaction/photo4.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.interaction -->
+            <section class="company">
+                <div class="container">
+                    <h3 class="title">Нам доверяют более 50 компаний</h3>
+                    <p class="center"><img src="assets/images/main/section-services/line1.png" alt="" class="img-line"></p>
+                    <div class="company-wrapper">
+                        <div><img src="assets/images/main/section-services/section-company/company1.png" alt="" class="company-img"></div>
+                        <div><img src="assets/images/main/section-services/section-company/company2.png" alt="" class="company-img"></div>
+                        <div><img src="assets/images/main/section-services/section-company/company3.png" alt="" class="company-img"></div>
+                        <div><img src="assets/images/main/section-services/section-company/company4.png" alt="" class="company-img"></div>
+                        <div><img src="assets/images/main/section-services/section-company/company5.png" alt="" class="company-img"></div>
+                        <div><img src="assets/images/main/section-services/section-company/company6.png" alt="" class="company-img"></div>
+                        <div><img src="assets/images/main/section-services/section-company/company7.png" alt="" class="company-img"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.company -->
+            <section class="team">
+                <div class="container">
+                    <h3 class="title">Наша команда</h3>
+                    <p class="center"><img src="assets/images/main/section-services/line1.png" alt="" class="img-line"></p>
+                    <figure class="team-wrapper">
+                        <div class="team-wrapper__line">
+                            <div class="team-wrapper__column">
+                                <img src="assets/images/main/section-services/section-team/photo1.png" alt="" class="team__img">
+                                <div class="team__person">Ирина Притыкина</div>
+                                <div class="team__position">Директор компании</div>
+                            </div>
+                            <div class="team-wrapper__column">
+                                <img src="assets/images/main/section-services/section-team/photo2.png" alt="" class="team__img">
+                                <div class="team__person">Игорь Карий</div>
+                                <div class="team__position">Финансовый директор</div>
+                            </div>
+                            <div class="team-wrapper__column">
+                                <img src="assets/images/main/section-services/section-team/photo3.png" alt="" class="team__img">
+                                <div class="team__person">Илья Кондрашин</div>
+                                <div class="team__position">Инженер модельер</div>
+                            </div>
+                        </div>
+                        <div class="team-wrapper__line">
+                            <div class="team-wrapper__column">
+                                <img src="assets/images/main/section-services/section-team/photo4.png" alt="" class="team__img">
+                                <div class="team__person">Маргарита Гордеева </div>
+                                <div class="team__position">3D дизайнер </div>
+                            </div>
+                            <div class="team-wrapper__column">
+                                <img src="assets/images/main/section-services/section-team/photo5.png" alt="" class="team__img">
+                                <div class="team__person">Светлана Коток</div>
+                                <div class="team__position">Дизайнер интерьеров</div>
+                            </div>
+                            <div class="team-wrapper__column">
+                                <img src="assets/images/main/section-services/section-team/photo6.png" alt="" class="team__img">
+                                <div class="team__person">Максим Ковальский</div>
+                                <div class="team__position">Дизайнер ландшафтов</div>
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="quote-wrapper">
+                        <div><img src="assets/images/main/section-services/section-team/icon1.png" alt="" class="quote-wrapper__img"></div>
+                        <div class="quote">
+                        <div class="quote-wrapper__title">Ты - то, что ты делаешь!</div>
+                        <div class="quote-wrapper__subtitle">
+                            То, что мы делаем, определяет то, кем мы являемся. Люди чувствуют старание и чувствуют неаккуратность.<br>
+                            Это связано с уважением друг к другу, так что небрежность - это неуважение к самому себе.
+                        </div>
+                        <div class="quote-wrapper__author">Ислам Куаныш</div>
+                        <div class="quote-wrapper__author-position">Директор</div>
+                        </div>
+                        <div class="quote-wrapper__img_buttom"><img src="assets/images/main/section-services/section-team/icon2.png" alt="" class="quote-wrapper__img"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog">
+                <div class="container">
+                    <h3 class="title">Блог</h3>
+                    <p class="center"><img src="assets/images/main/section-services/line1.png" alt="" class="img-line"></p>
+                    <div class="blog-wrapper">
+                        <div class="blog-wrapper__column">
+                            <img src="assets/images/main/section-services/section-blog/image1.png" alt="" class="blog-wrapper__img">
+                            <p class="title-center"><a href="#" class="blog-wrapper__title">
+                                Минимализм – это самый простой, практичный и «спорный»<br>
+                                стиль в дизайне интерьеров
+                            </a></p>
+                        </div>
+                        <div class="blog-wrapper__column">
+                            <img src="assets/images/main/section-services/section-blog/image2.png" alt="" class="blog-wrapper__img">
+                            <p class="title-center"><a href="#" class="blog-wrapper__title">
+                                Прованс - это спокойный южный регион Франции, с<br>
+                                великолепнейшей природой
+                            </a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="questions">
+                <div class="container">
+                    <h3 class="questions__title">Остались вопросы?</h3>
+                    <p class="center"><img src="assets/images/main/section-services/section-questions/line.png" alt="" class="questions__img-line"></p>
+                    <p class="questions__subtitle"><label for="input-name" class="questions__label">Задайте их в форме ниже и наши специалисты свяжутся с Вами!</label></p>
+                    <div class="questions__wrapper-line">
+                        <form action="" class="questions-form">
+                            <div class="form-wrapper">
+                                <div class="questions-wrap">
+                                    <input id="input-name" type="text" placeholder="Ваше имя" class="form-wrapper__input form-wrapper__input-name">
+                                    <input type="text" placeholder="Ваш e-mail" class="form-wrapper__input form-wrapper__input-email">
+                                    <input type="text" placeholder="Ваш номер телофона" class="form-wrapper__input form-wrapper__input-tel">
+                                </div>
+                                <textarea name="message" id="" cols="60" rows="10" class="form-wrapper__input_textarea"></textarea>
+                                <div class="submit-center">
+                                    <input type="submit" class="form__submit" value="Оставить заявку!">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="form-wrapper-links">
+                            <div class="form-wrap">
+                                <img src="assets/images/main/section-services/section-questions/icon1.png" alt="" class="form-wrap__img">
+                                <a href="tel:+78968766677" class="form-wrap__link">+ 7 896 876 66 77</a>
+                            </div>
+                            <div class="form-wrap">
+                                <img src="assets/images/main/section-services/section-questions/icon2.png" alt="" class="form-wrap__img">
+                                <a href="https://wa.me/+78968766677" class="form-wrap__link">+ 7 896 876 66 77</a>
+                            </div>
+                            <div class="form-wrap">
+                                <img src="assets/images/main/section-services/section-questions/icon3.png" alt="" class="form-wrap__img">
+                                <a href="mailto:sales@23degree.kz" class="form-wrap__link">sales@23degree.kz</a>
+                            </div>
+                            <div class="form-wrap">
+                                <img src="assets/images/main/section-services/section-questions/icon4.png" alt="" class="form-wrap__img">
+                                <a href="skype:skype: 23degree?call" class="form-wrap__link">skype: 23degree</a>
+                            </div>
+                            <div class="form-wrap">
+                                <img src="assets/images/main/section-services/section-questions/icon5.png" alt="" class="form-wrap__img">
+                                <a href="tg://resolve?domain=23degree" class="form-wrap__link">telegram: 23degree</a>
+                            </div>
+                            <div class="schedule">График работы: с 9-00 до 18-00. Пн.-Пт.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.questions -->
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A37321a98a4c5ef8b7d0253a9f672070edfa778f6ee77038800cb8bb41dda46f9&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-wrapper">
+                        <div class="footer-wrapper-big">
+                            <div class="footer-wrapper-small">
+                                <a href="#" class="footer-wrapper-small__link">Главная</a>
+                                <a href="#" class="footer-wrapper-small__link">Тарифы</a>
+                            </div>
+                            <div class="footer-wrapper-small">
+                                <a href="#" class="footer-wrapper-small__link">Вопросы-ответы</a>
+                                <a href="#" class="footer-wrapper-small__link">Личный кабинет</a>
+                            </div>
+                            <div class="footer-wrapper-small">
+                                <a href="#" class="footer-wrapper-small__link">Новости</a>
+                                <a href="#" class="footer-wrapper-small__link">Договор публичной оферты</a>
+                            </div>
+                        </div>
+                        <div class="footer-wrapper-small">
+                            <div class="footer-wrapper-small__wrapper">Мы в социальных сетях:</div>
+                            <div class="footer-wrapper-line">
+                                <a href="https://www.facebook.com" class="line-wrap"><img src="assets/images/footer/icon1.png" alt="" class="footer-wrapper-small__img"></a>
+                                <a href="https://accounts.google.com" class="line-wrap"><img src="assets/images/footer/icon2.png" alt="" class="footer-wrapper-small__img"></a>
+                                <a href="https://www.instagram.com" class="line-wrap"><img src="assets/images/footer/icon3.png" alt="" class="footer-wrapper-small__img"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="footer-hr">
+                    <h4 class="footer__title">© Kazteleport, 2015. Все права защищены</h4>
+                </div>
+            </footer>
+        </main>
+        <!-- /.main -->
+        <script src="src/JavaScript/jquery-3.4.1.js"></script>
+        <script src="src/JavaScript/main.js"></script>
+        <script src="src/JavaScript/index.js"></script>
+    </body>
+</html>

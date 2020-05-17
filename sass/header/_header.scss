@@ -1,0 +1,165 @@
+.header {
+    padding-top: 34px;
+    background: url(../assets/images/header/background.png) no-repeat center;
+    background-position: center;
+    height: 100vh;
+    .title {
+        margin-top: 67px;
+
+        @include text($textwhite, 48px, 700, $RobotoBold, 44px);
+        text-align: center;
+        &-small {
+            font-size: 36px;
+        }
+    }
+    .center {
+        margin-top: 37px;
+
+        text-align: center;
+    }
+    .subtitle-big {
+        transition-duration: 0.5s;
+        &:hover {
+            color: rgb(43, 147, 216);
+        }
+    }
+    .subtitle {
+        margin-top: 37px;
+
+        @include text($textwhite, 22px, 300, $RobotoLight, 28px);
+        opacity: 0.7;
+        text-align: center;
+        &-small {
+            font-size: 14px;
+        }
+    }
+    .form {
+        max-width: 888px;
+        text-align: center;
+        margin: 0 auto; 
+        margin-top: 45px;
+        :not(:first-child) {
+            margin-left: 10px;
+        }
+        .wrapper {
+            display: flex;
+        }
+        &__submit {
+            margin-top: 21px;
+            padding: 20px 52px 17px 49px;
+
+            @include text($textwhite, 16px, 500, $RobotoRegular, 19.48px);
+            text-align: center;
+            background-color: $buttoncolor;
+            border-radius: 30px;
+            outline: none;
+            border: 1px solid $buttoncolor;
+            transition-duration: 0.5s;
+            &:hover {
+                color: $buttoncolor;
+                background-color: transparent;
+            }
+        }
+        &__input {
+            padding-left: 27px;
+
+            width: 100%;
+            height: 51px;
+
+            border: none;
+            border-radius: 30px;
+            outline: none; 
+        }
+    }
+    ::-webkit-input-placeholder {
+        @include text(#606060, 13px, 300, $RobotoRegular, 24px);
+    }
+    ::-moz-placeholder {
+        @include text(#606060, 13px, 300, $RobotoRegular, 24px);
+    }
+    :-moz-placeholder {
+        @include text(#606060, 13px, 300, $RobotoRegular, 24px);
+    }
+    :-ms-input-placeholder {
+        @include text(#606060, 13px, 300, $RobotoRegular, 24px);
+    }
+    .slider {
+        margin-top: 76px;
+
+        cursor: pointer;
+        transition-duration: 0.3s;
+        &:hover {
+            margin-top: 65px;
+        }
+    }
+    .center-slider {
+        text-align: center;
+    }
+}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.logo {
+    display: flex;
+    align-items: center;
+    &__text {
+        margin-left: 11px;
+
+        @include text($textwhite, 28px, 400, $RobotoRegular, 24px);
+        text-decoration: none;
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    &-line {
+        display: flex;
+        align-items: center;
+        .icon-phone {
+            margin-right: 10px;
+        }
+    }
+    &-column {
+        display: flex;
+        flex-direction: column;
+        &__title {
+            @include text($textwhite, 12px, 300, $RobotoLight, 24px);
+        }
+        &__link {
+            @include text($textwhite, 21px, 500, $RobotoMedium, 24px);
+            text-decoration: none;
+            transition-duration: 0.5s;
+            &:hover {
+                color: rgb(59, 119, 160);
+            }
+        }
+        &_second {
+            margin-left: 61px;
+        }
+        &__button {
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+        &__text {
+            @include text($textwhite, 12px, 500, $RobotoMedium, 24px);
+            background: transparent;
+            border: none;
+            outline: none;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            transition-duration: 0.5s;
+            &:hover {
+                color: rgb(59, 119, 160);
+            }
+        }
+    }
+}

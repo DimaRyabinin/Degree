@@ -1,0 +1,64 @@
+.team {
+  &__person {
+    margin-top: 22px;
+
+    @include text($textblue, 24px, 300, $RobotoLight, 27px);
+  }
+  &__position {
+    margin-top: 10px;
+
+    @include text($textgray, 16px, 300, $RobotoLight, 27px);
+  }
+  .team-wrapper {
+    margin-top: 41px;
+
+    display: flex;
+    flex-direction: column;
+    &__line {
+      display: flex;
+      justify-content: space-around;
+      &:nth-child(2) {
+        margin-top: 50px;
+      }
+    }
+    &__column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .quote {
+    text-align: center;
+  }
+  .quote-wrapper {
+    margin-top: 72px;
+    padding-bottom: 64px;
+
+    display: flex;
+    justify-content: space-between;
+    &__title {
+      margin-top: 17px;
+
+      @include text($textgray, 30px, 300, $RobotoLight, 26px);
+    }
+    &__subtitle {
+      margin-top: 20px;
+
+      @include text($textgray, 18px, 300, $RobotoLight, 26px);
+    }
+    &__author {
+      margin-top: 10px;
+
+      @include text($textgray, 16px, 500, $RobotoMedium, 26px);
+    }
+    &__author-position {
+      margin-top: 6px;
+      padding-bottom: 17px;
+
+      @include text($textgray, 16px, 300, $RobotoLight, 26px);
+    }
+  }
+  .quote-wrapper__img_buttom {
+    align-self: flex-end;
+  }
+}

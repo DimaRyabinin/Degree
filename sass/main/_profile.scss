@@ -1,0 +1,111 @@
+.profile {
+  .profile-center {
+    display: flex;
+    justify-content: center;
+  }
+  .wrap {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid $textblue;
+    border-radius: 35px;
+  }
+  .profile__input {
+    display: none;
+  }
+  .profile__label:not(:last-child) {
+    border-right: 1px solid $textblue;
+  }
+  #all-label {
+    margin-left: 0;
+    transition-duration: 0.5s;
+    &:hover {
+      background-color: $textblue;
+      border-radius: 35px 0px 0px 35px;
+      color: $textwhite;
+    }
+  }
+  #extr-label {
+    transition-duration: 0.5s;
+    &:hover {
+      background-color: $textblue;
+      color: $textwhite;
+    }
+  }
+  #intr-label {
+    transition-duration: 0.5s;
+    &:hover {
+      background-color: $textblue;
+      color: $textwhite;
+    }
+  }
+  #public-label {
+    transition-duration: 0.5s;
+    &:hover {
+      background-color: $textblue;
+      border-radius: 0px 35px 35px 0px;
+      color: $textwhite;
+    }
+  }
+  .profile__label {
+    padding: 5px 38px 6px 38px;
+
+    @include text($textblue, 14px, 300, $RobotoRegular, 38px);
+    text-transform: uppercase;
+  }
+  .active-all {
+    background-color: $textblue;
+    border-radius: 35px 0px 0px 35px;
+    color: $textwhite;
+  }
+  .active-extr {
+    background-color: $textblue;
+    border-radius: 0px 0px 0px 0px;
+    color: $textwhite;
+  }
+  .active-intr {
+    background-color: $textblue;
+    border-radius: 0px 0px 0px 0px;
+    color: $textwhite;
+  }
+  .active-public {
+    background-color: $textblue;
+    border-radius: 0px 35px 35px 0px;
+    color: $textwhite;
+  }
+
+  .profile-figure {
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+  }
+  .figure {
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__img {
+      border-radius: 7px;
+      transition-duration: 0.5s;
+      &:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    }
+  }
+  .figure-wrapper:not(:first-child) {
+    margin-top: 20px;
+  }
+  .img-wrapper {
+    width: 100%;
+  }
+  .profile-figure {
+    padding-bottom: 51px;
+    display: none;
+  }
+  .active  {
+    display: block;
+  }
+}

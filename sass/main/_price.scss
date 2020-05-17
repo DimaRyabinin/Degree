@@ -1,0 +1,224 @@
+.price {
+    h4 {
+        margin: 0;
+        padding: 0;
+    }
+    background: url(../assets/images/main/section-services/section-price/background.png) no-repeat center;
+    background-size: cover;
+    .center {
+        margin-top: 29px;
+
+        text-align: center;
+    }
+    .title {
+        padding-top: 62px;
+
+				@include text($textwhite, 36px, 300, $RobotoLight, 38px);
+    }
+    .subtitle {
+        margin-top: 24px;
+				
+				@include text($textwhite, 26px, 300, $RobotoLight, 38px);
+        text-align: center;
+        opacity: 0.7;
+        transition-duration: 0.5s;
+        &:hover {
+            color: rgb(43, 147, 216);
+        }
+    }
+    .wrapper-price {
+			margin-top: 39px;
+
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+    }
+    .wrap {
+        display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+        &__title {
+            padding-top: 22px;
+            padding-left: 23px;
+
+						@include text($textwhite, 20px, 400, $RobotoRegular, 24px);
+        }
+		}
+		.wrap-small {
+			display: flex;
+			flex-direction: column;
+			border: 1px solid $textwhite;
+			border-radius: 7px;
+			width: 100%;
+		}
+		.wrap-small_second {
+			position: relative;
+			margin-top: 8px;
+		}
+		.slidecontainer {
+			margin-top: 51px;
+			margin-left: 23px;
+
+			@include text($textwhite, 16px, 400, $RobotoRegular, 24px);
+		}
+		.slider {
+			margin-top: 10px;
+			margin-right: 26px;
+			margin-bottom: 30px;
+
+			-webkit-appearance: none;
+			width: 500px;
+			height: 9px;
+			background: #d3d3d3;
+			border-radius: 7px;
+			outline: none;
+			opacity: 0.5;
+			-webkit-transition: .2s;
+			transition: opacity .2s;
+	}
+	.slider:hover {
+			opacity: 0.8;
+	}
+	.slider::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 23px;
+			height: 23px;
+			border-radius: 50%;
+			background-color: $textblue;
+			cursor: pointer;
+	}
+	.slider::-moz-range-thumb {
+		width: 23px;
+		height: 23px;
+		border-radius: 50%;
+		background-color: $textblue;
+			cursor: pointer;
+	}
+	.hidden {
+		display: none;
+	}
+	.wrapper-button {
+		margin-top: 35px;
+		margin-left: 23px;
+		margin-bottom: 30px;
+
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.wrapper-button__light {
+		padding: 16px 79px 12px 79px;
+	}
+	.wrapper-button__medium {
+		padding: 16px 68px 16px 67px;
+		margin-left: 15px;
+	}
+	.wrapper-button__full {
+		margin-right: 20px;
+		margin-left: 15px;
+		padding: 16px 85px 16px 84px;
+	}
+	.wrapper-button-label {	
+		@include text($textwhite, 16px, 400, $RobotoRegular, 24px);
+		border: 1px solid $textwhite;
+		border-radius: 8px;
+		transition-duration: 0.5s;
+	}
+	.hidden-description {
+		margin-top: 71px;
+		padding: 21px 31px 21px 31px;
+
+		@include text($textgray, 14px, 400, $RobotoRegular, 24px);
+		background-color: $textwhite;
+		border-radius: 7px;
+		position: absolute;
+		opacity: 0;
+		transition-duration: 0.3s;
+		&-second {
+			margin-left: 98px;
+			text-align: center;
+		}
+		&-third {
+			margin-left: 45px;
+			text-align: end;
+		}
+	}
+	.wrapper-button-label:hover {
+		background-color: $textblue;
+		border: 1px solid $textblue;
+
+	}
+	.wrapper-button-label:hover + .hidden-description-first {
+		opacity: 1;
+	} 
+	.wrapper-button-label:hover + .hidden-description-second {
+		opacity: 1;
+	} 
+	.wrapper-button-label:hover + .hidden-description-third {
+		opacity: 1;
+	} 
+	.wrap-second {
+		margin-right: 72px;
+	}
+	.wrap-second_wrap:not(:first-child) {
+		margin-top: 25px;
+	}
+	.wrap-second {
+		padding-bottom: 67px;
+		&__title {
+			@include text($textwhite, 16px, 400, $RobotoRegular, 24px);
+			text-align: center;
+		}
+		&__input {
+			margin-top: 16px;
+
+			background: transparent;
+			border: none;
+
+			@include text($textwhite, 32px, 400, $RobotoRegular, 32px);
+			text-align: center;
+			outline: none;
+		}
+		&__submit {
+			margin-top: 34px;
+			padding: 20px 32px 18px 31px;
+			
+			text-align: center;
+      background-color: $buttoncolor;
+			border-radius: 30px;
+
+			@include text($textwhite, 16px, 500, $RobotoRegular, 19.48px);
+			border: 1px solid $buttoncolor;
+			transition-duration: 0.5s;
+			outline: none;
+			&:hover {
+				color: $buttoncolor;
+				background-color: transparent;
+			}
+		}
+		&__call {
+			margin-top: 22px;
+
+			@include text($textwhite, 14px, 300, $RobotoLight, 24px);
+			text-align: center;
+		}
+		&__link {
+			@include text($textwhite, 18px, 500, $RobotoLight, 24px);
+			text-decoration: none;
+			transition-duration: 0.5s;
+        &:hover {
+            color: $buttoncolor;
+        }
+		}
+		&__center {
+			text-align: center;
+		}
+	}
+	.active {
+		background-color: $buttoncolor;
+		border: 1px solid $buttoncolor;
+	}
+}
+
+
+

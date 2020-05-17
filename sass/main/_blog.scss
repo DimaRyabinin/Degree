@@ -1,0 +1,25 @@
+.blog {
+  background-color: $background;
+  .blog-wrapper {
+    margin-top: 34px;
+
+    display: flex;
+    justify-content: space-between;
+    &__img {
+      border-radius: 7px;
+    }
+    &__title {
+      @include text($textblue, 18px, 300, $RobotoLight, 24px);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .title-center {
+      margin-top: 21px;
+      padding-bottom: 70px;
+
+      text-align: center;
+    }
+  }
+}

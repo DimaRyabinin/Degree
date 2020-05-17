@@ -1,0 +1,126 @@
+.questions {
+  background: url(../assets/images/main/section-services/section-questions/background.png) no-repeat center;
+  background-size: cover;
+  &__title {
+    padding-top: 57px;
+
+    @include text($textwhite, 36px, 300, $RobotoLight, 38px);
+    text-align: center;
+  }
+  &__subtitle {
+    margin-top: 24px;
+    
+    @include text($textwhite, 26px, 300, $RobotoLight, 38px);
+    text-align: center;
+    opacity: 0.7;
+
+    transition-duration: 0.5s;
+    &:hover {
+        color: rgb(43, 147, 216);
+    }
+  }
+  .questions__wrapper-line {
+    margin-top: 44px;
+
+    display: flex;
+  }
+  .questions-form {
+    display: flex;
+    width: 751px;
+
+    justify-content: flex-start;
+  }
+  .questions-wrap {
+    width: 100%;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  .form-wrap__link {
+    margin-left: 14px;
+
+    @include text($textwhite, 18px, 500, $RobotoMedium, 24px);
+    text-decoration: none;
+
+    transition-duration: 0.5s;
+    &:hover {
+      color: rgb(43, 147, 216);
+    }
+  }
+  .form-wrap {
+    display: flex;
+    align-items: center;
+    &:not(:first-child) {
+      margin-top: 25px;
+    }
+    &__img {
+      margin-left: 30px;
+    }
+  }
+  .schedule {
+    margin-top: 36px;
+    padding-bottom: 83px;
+
+    @include text($textwhite, 16px, 300, $RobotoLight, 24px);
+    opacity: 0.7;
+  }
+
+  .form-wrapper__input {
+    padding-left: 19px;
+
+    width: 100%;
+    height: 49px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+  }
+  .form-wrapper__input_textarea {
+    margin-top: 13px;
+    padding-left: 19px;
+
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    resize: none;
+  }
+  .questions-wrap {
+    display: flex;
+    :not(:first-child) {
+      margin-left: 15px;
+    }
+  }
+  ::-webkit-input-placeholder {
+    @include text(#606060, 13px, 300, $RobotoRegular, 24px);
+}
+::-moz-placeholder {
+  @include text(#606060, 13px, 300, $RobotoRegular, 24px);
+}
+:-moz-placeholder {
+  @include text(#606060, 13px, 300, $RobotoRegular, 24px);
+}
+:-ms-input-placeholder {
+  @include text(#606060, 13px, 300, $RobotoRegular, 24px);
+}
+
+.form__submit {
+  margin-top: 17px;
+  padding: 20px 52px 17px 49px;
+
+  background-color: $buttoncolor;
+  border-radius: 30px;
+
+  @include text($textwhite, 16px, 500, $RobotoRegular, 19.48px);
+  outline: none;
+  border: 1px solid $buttoncolor;
+  transition-duration: 0.5s;
+  &:hover {
+      color: $buttoncolor;
+      background-color: transparent;
+  }
+}
+
+.submit-center {
+  text-align: center;
+}
+}

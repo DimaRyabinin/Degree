@@ -1,0 +1,23 @@
+.interaction {
+  .interaction {
+    &-wrapper {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__img {
+      border-radius: 7px;
+    }
+    &__description {
+      @include text($textgray, 30px, 300, $RobotoLight, 38px);
+    }
+  }
+  .interaction-center {
+    text-align: center;
+  }
+}

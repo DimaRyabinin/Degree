@@ -1,0 +1,33 @@
+.advertising {
+  background-color: $background;
+  .advertising {
+    &-wrapper {
+      margin-top: 34px;
+      display: flex;
+      justify-content: space-between;
+      &-second {
+        margin-top: 56px;
+        padding-bottom: 70px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-first {
+        margin-right: 40px;
+      }
+      &-second {
+        margin-left: 40px;
+      }
+    }
+    &__description {
+      margin-top: 23px;
+
+      @include text(#3f3f3f, 14px, 500, $RobotoMedium, 20px);
+      text-align: center;
+    }
+  }
+}
